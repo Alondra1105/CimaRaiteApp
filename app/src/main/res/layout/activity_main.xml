@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtV_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="25dp"
+        android:text="Bienvenido!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:typeface="normal"
+        app:fontFamily="@font/boogaloo"
+        app:layout_constraintBottom_toTopOf="@+id/img_cimarron"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_cimarron"
+        android:layout_width="153dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtV_main"
+        app:srcCompat="@drawable/logo_cimarron" />
+
+    <Button
+        android:id="@+id/btn_IS"
+        android:layout_width="246dp"
+        android:layout_height="44dp"
+        android:onClick="abrirInicio2"
+        android:text="Iniciar Sesión"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+
+</android.support.constraint.ConstraintLayout>
